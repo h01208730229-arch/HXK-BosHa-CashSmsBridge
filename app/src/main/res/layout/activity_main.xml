@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:padding="20dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="HXK BosHa" android:textStyle="bold" android:textSize="24sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="يرسل رسائل استلام فودافون كاش إلى بوابتك" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/endpoint" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="https://example.com/api/cash/sms" android:inputType="textUri" android:layout_marginTop="20dp" />
+        <EditText android:id="@+id/token" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="مفتاح الحماية" android:inputType="textPassword" android:layout_marginTop="10dp" />
+        <Button android:id="@+id/save" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="حفظ الإعدادات" android:layout_marginTop="16dp" />
+        <Button android:id="@+id/permissions" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="السماح بقراءة الرسائل" android:layout_marginTop="8dp" />
+        <Button android:id="@+id/battery" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="منع إيقاف التطبيق لتوفير البطارية" android:layout_marginTop="8dp" />
+        <Button android:id="@+id/test" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="اختبار الاتصال" android:layout_marginTop="8dp" />
+        <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="الحالة: غير مُعد" android:layout_marginTop="18dp" />
+    </LinearLayout>
+</ScrollView>
